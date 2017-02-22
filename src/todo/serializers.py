@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from todo.models import TodoItem
 
-class TodoItemSerializer(serializers.HyperlinkedModel):
+class TodoItemSerializer(serializers.HyperlinkedModelSerializer):
 	"""docstring for TodoItemSerializer"""
 	def __init__(self, arg):
 		super(TodoItemSerializer, self).__init__()
