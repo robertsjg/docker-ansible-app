@@ -4,6 +4,7 @@ Terminal commands run to setup
 	source venv/bin/activate
 	pip install ansible awscli boto boto3
 	docker-machine create --driver virtualbox docker01
+	docker-machine start docker01
 	docker-machine env docker01
 	eval $(docker-machine env docker01)
 
